@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="wrapper-logo">
+          <div class="h-logo">
+            <img class="logo" src="./public/4.png" alt="logo" />
+          </div>
+          <h2>Todo List</h2>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Deals</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <main>
+      <div class="container">
+        <form autocomplete="off">
+          <label>
+            <input
+              id="new-todo"
+              name="todo"
+              type="text"
+              placeholder="new todo"
+            />
+          </label>
+          <select id="user-todo" name="user">
+            <option disabled selected>select user</option>
+          </select>
+          <button>Add Todo</button>
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+    </main>
+
+    
+    <footer>
+      <div class="container">
+        <div class="timecode">Azerbaijan, Baku, 2024</div>
+      </div>
+    </footer>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

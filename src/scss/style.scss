@@ -1,0 +1,58 @@
+@import "./blocks/headers";
+@import "./blocks/footer";
+
+$color_1: #323232;
+$color_2: #e8c872;
+$color_3: #fff3cf;
+$color_4: #eeedeb;
+$color_5: #e0ccbe;
+$color_6: #637a9f;
+$color_7: #c9d7dd;
+$color_8: #cdfadb;
+$color_9: #e78895;
+
+* {
+  box-sizing: border-box;
+  body {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  main {
+    padding: 50px;
+    form {
+      width: 500px;
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      input,
+      select {
+        color: $color_1;
+        padding: 1rem 1rem;
+        border-radius: 5px;
+        border: 1px solid $color_7;
+        outline: none;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      input[type="text"] {
+        width: 100%;
+      }
+
+      button {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        cursor: pointer;
+        background-color: $color_2;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        padding: 0.5rem 0.8rem;
+        &:hover {
+          // background-color: $color_9;
+          // box-shadow: 0px 0px 20px 0px $color_9;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
